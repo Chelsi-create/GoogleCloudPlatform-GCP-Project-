@@ -1,0 +1,44 @@
+{% autoescape true %}
+<html>
+    <head>
+        <title>ViewEmp</title>
+        <style type="text/css">
+            #viewemp
+            {
+                background-color: goldenrod;
+                width: 100%;
+            }
+            #viewemp tr:hover
+            {
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Employee Detail
+        </h2>
+        <table id="viewemp" border="1">
+            <tr>
+                <th>Emp Name</th>
+                <th>Emp PIN</th>
+                <th>Gender</th>
+                <th>Emp Branch</th>
+                <th>Emp Salary</th>
+                <th>Date & Time</th>
+            </tr>
+            {% for item in data %}
+                <tr>
+                    <td>{{item.EName}}</td>
+                    <td>{{item.EPIN}}</td>
+                    <td>{{item.Gen}}</td>
+                    <td>{{item.EBranch}}</td>
+                    <td>{{item.ESalary}}</td>
+                    
+
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
+{% endautoescape %}

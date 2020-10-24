@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Add Emp</title>
+        <style type="text/css">
+            #f1
+            {
+                background-color: white;
+                width: 70%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2> Adding new Employee Details</h2>
+        <form action="/addemp" id = "f1" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" name="tfName" placeholder="Enter Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="pfPass" placeholder="Enter Password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="gen" value = "Male" checked/>Male
+                        <input type="radio" name="gen" value = "Female"/>Female
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <select name="ddBranch">
+                            <option>Computer Science</option>
+                            <option>Information Technology</option>
+                            <option>Mechanical</option>
+                            <option>Electrical</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="numESalary" placeholder="Enter your Salary"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="file" name="profile" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+# application: gcp16
+# version: 1
+runtime: python27
+threadsafe: true
+
+handlers: 
+  - url: /.*
+    script: main.start
+
+libraries:
+  - name: jinja2
+    version: "2.6" 
